@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: auto;
+        text-align: center;
+        max-width: 650px;
+        background: linear-gradient(
+          to top,
+          #c4c5c7 0%,
+          #dcdddf 52%,
+          #ebebeb 100%
+        );
+        color: #2c5d63;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      h1 {
+        margin: 20px auto;
+        padding-top: 50px;
+        font-size: 50px;
+      }
+
+      span {
+        color: #a2c11c;
+      }
+      h2 {
+        color: #a2c11c;
+        margin: 30px auto;
+        font-size: 28px;
+      }
+      img {
+        display: block;
+        border-radius: 10px;
+        width: 600px;
+      }
+      p {
+        font-size: 22px;
+        line-height: 1.5;
+      }
+      .main-description {
+        padding: 20px 30px;
+        margin: 0 auto;
+      }
+      .wiki {
+        font-size: 18px;
+        text-align: left;
+        padding-left: 30px;
+        margin: o auto;
+      }
+      .wiki-link {
+        text-decoration: none;
+        color: #a2c11c;
+      }
+      .footer-link {
+        color: #2c5d63;
+      }
+      .wiki-link:active,
+      .footer-link:active {
+        color: #283739;
+      }
+      h3 {
+        font-size: 26px;
+        color: #a2c11c;
+        margin-bottom: 0;
+      }
+      ol {
+        list-style-position: inside;
+        font-size: 22px;
+        line-height: 1.5;
+        padding: 20px 30px;
+        margin: 0 auto;
+      }
+      button {
+        background-color: #a2c11c;
+        color: #2c5d63;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        margin-bottom: 20px;
+      }
+
+      button:hover {
+        color: #a2c11c;
+        background: #2c5d63;
+        cursor: pointer;
+      }
+      .footer {
+        font-size: 18px;
+        font-weight: 100;
+        padding-bottom: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>Aspa<span class="heading-element">ragus</span></h1>
+
+      <h2>One of the most tasty superfoods</h2>
+      <hr />
+      <p class="main-description">
+        <strong>Asparagus</strong>, or garden asparagus, folk name sparrow
+        grass, scientific name <em>Asparagus officinalis</em>, is a perennial
+        flowering plant species in the genus Asparagus. Asparagus is rich in
+        minerals and vitamins A, C and folic acid. It's a fibrous vegetable that
+        may support a healthy gut, as well as help to lower blood pressure. For
+        these reasons, it can be considered a healthy addition to any diet.
+        <br />
+        Including asparagus in your diet is a healthy choice, regardless of how
+        you prepare it. Whether you cook it or eat it raw is a matter of
+        personal preference. Both options add fiber, antioxidants, and essential
+        nutrients to your diet. Asparagus is a nutritious and delicious
+        vegetable that can be eaten every day. Low in calories and packed with
+        essential vitamins, minerals, and antioxidants, it's great to include in
+        a fiber-rich diet to keep your digestive system healthy. Specifically,
+        when asparagus was cooked, the content of beta carotene and quercetin -
+        two powerful antioxidants - increased by 24% and 98%, respectively.
+        However, another study found that the antioxidant activity in cooked
+        white asparagus was almost three times higher than in raw asparagus.
+      </p>
+      <p class="wiki">
+        Learn more on
+        <a
+          class="wiki-link"
+          href="https://en.wikipedia.org/wiki/Asparagus"
+          target="_blank"
+          >Wikipedia</a
+        >
+      </p>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/003/original/133396.jpg?1698313932"
+        alt="Asparagus picture"
+      />
+
+      <h3>Health benefits of asparagus include:</h3>
+      <ol>
+        <li>It acts as a prebiotic, feeding good bacteria in the gut.</li>
+        <li>Studies suggest that asparagus may help ease a hangover.</li>
+        <li>Asparagus is a rich in folate.</li>
+        <li>Eating asparagus may help relieve inflammatory conditions.</li>
+        <li>
+          It’s a good source of potassium so may help lower blood pressure.
+        </li>
+      </ol>
+
+      <button>Buy now</button>
+      <hr />
+      <p class="footer">
+        Coded by
+        <a
+          class="footer-link"
+          href="https://www.linkedin.com/in/alexandra-shkap-5235a0108/"
+          target="_blank"
+          >Oleksandra Shkap</a
+        >
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        if (age >= 18) {
+          alert("Hi " + name + "! We will contact you as soon as possible!");
+        } else {
+          alert(
+            "Hi " +
+              name +
+              "! Please, ask your parents to help you with this purchase!"
+          );
+        }
+      }
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
