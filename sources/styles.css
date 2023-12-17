@@ -1,0 +1,87 @@
+div {
+  margin: auto;
+  text-align: center;
+  max-width: 650px;
+  background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+  color: #2c5d63;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+h1 {
+  margin: 20px auto;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+span {
+  color: #a2c11c;
+}
+h2 {
+  color: #a2c11c;
+  margin: 30px auto;
+  font-size: 28px;
+}
+img {
+  display: block;
+  border-radius: 10px;
+  width: 600px;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+.main-description {
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+.wiki {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 30px;
+  margin: o auto;
+}
+.wiki-link {
+  text-decoration: none;
+  color: #a2c11c;
+}
+.footer-link {
+  color: #2c5d63;
+}
+.wiki-link:active,
+.footer-link:active {
+  color: #283739;
+}
+h3 {
+  font-size: 26px;
+  color: #a2c11c;
+  margin-bottom: 0;
+}
+ol {
+  list-style-position: inside;
+  font-size: 22px;
+  line-height: 1.5;
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+button {
+  background-color: #a2c11c;
+  color: #2c5d63;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  color: #a2c11c;
+  background: #2c5d63;
+  cursor: pointer;
+}
+.footer {
+  font-size: 18px;
+  font-weight: 100;
+  padding-bottom: 30px;
+}
